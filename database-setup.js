@@ -1,15 +1,15 @@
 const { testConnection, syncDatabase } = require('./database');
 
 const setupDatabase = async () => {
-  console.log('🔧 Setting up database...');
+  console.log(' Setting up database...');
   
   try {
 
-    console.log('📡 Testing database connection...');
+    console.log(' Testing database connection...');
     await testConnection();
     
 
-    console.log('🗄️  Creating database tables...');
+    console.log('🗄  Creating database tables...');
     await syncDatabase();
     
     console.log(' Database setup completed successfully!');
